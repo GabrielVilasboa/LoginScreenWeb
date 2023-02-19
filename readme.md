@@ -5,4 +5,5 @@
 3.Criar o código JavaScript para autenticar o CPF e email e fazer a troca de telas. :key:  
 4.Utilizar o Bootstrap e CSS para estilizar a página. :art:
 
+
 Concluir o projeto até o fim do Carnaval. :checkered_flag:  
