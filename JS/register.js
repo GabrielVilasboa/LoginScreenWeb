@@ -1,7 +1,7 @@
 var form = document.getElementById('client_form');
-form.addEventListener('submit', getClient);
+form.addEventListener('submit', setClient);
 
-function getClient(event) {
+function setClient(event) {
   // Faz com que a página não seja recarregada
   event.preventDefault();
 
@@ -18,7 +18,7 @@ function getClient(event) {
     if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
       // Exibe uma mensagem na tela de acordo com a resposta do PHP
       if (this.responseText === "success") {
-        window.location.href = "../UI/index.html"
+        window.location.href = "../UI/index.html";
       } else if (this.responseText === "email_already_exists") {
         alert("Este e-mail já está cadastrado. Por favor, insira um e-mail diferente.");
         return false;
@@ -30,13 +30,11 @@ function getClient(event) {
         return false;
       }
     }
-    // Cria um objeto FormData com os dados do formulário e envia a requisição AJAX
-
   }
   var formData = new FormData(form);
   xhr.open("POST", "../ScriptPHP/register.php", true);
   xhr.send(formData);
-  
+
 }
 function validateForm() {
   // Obtém os campos do formulário
@@ -51,7 +49,7 @@ function validateForm() {
     alert("Por favor, preencha todos os campos.");
     return false;
   }
-  if (!validateEmail(email)){
+  if (!validateEmail(email.value)){
     alert("por favor digite um email válido");
     return false;
   }
@@ -77,7 +75,7 @@ function validateCPF(cpf) {
     if (/^(\d)\1{10}$/.test(cpf)) {
       return false;
     }
-  
+
     var sum = 0;
     for (var i = 0; i < 9; i++) {
       sum += parseInt(cpf.charAt(i)) * (10 - i);
@@ -85,7 +83,7 @@ function validateCPF(cpf) {
 
     var mod = sum % 11;
     var digit1 = mod < 2 ? 0 : 11 - mod;
-  
+
     sum = 0;
     for (var i = 0; i < 10; i++) {
       sum += parseInt(cpf.charAt(i)) * (11 - i);
@@ -93,11 +91,11 @@ function validateCPF(cpf) {
 
     mod = sum % 11;
     var digit2 = mod < 2 ? 0 : 11 - mod;
-  
+
     if (digit1 !== parseInt(cpf.charAt(9)) || digit2 !== parseInt(cpf.charAt(10))) {
       return false;
     }
-  
+
 return true; 
 }
 function validateEmail(email) {

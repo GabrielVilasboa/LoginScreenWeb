@@ -28,7 +28,6 @@
             $stmt -> execute();
             echo "success";
         }
-        mysqli_close($conn);
-    
     }
+    mysqli_close($conn);
 ?>
