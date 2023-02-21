@@ -18,7 +18,7 @@ function setClient(event) {
     if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
       // Exibe uma mensagem na tela de acordo com a resposta do PHP
       if (this.responseText === "success") {
-        window.location.href = "../UI/index.html";
+        window.location.href = "../UI/loginPage.html";
       } else if (this.responseText === "email_already_exists") {
         alert("Este e-mail já está cadastrado. Por favor, insira um e-mail diferente.");
         return false;
@@ -29,7 +29,7 @@ function setClient(event) {
         alert("Erro ao cadastrar o usuário. Por favor, tente novamente.");
         return false;
       }
-    }
+     }
   }
   var formData = new FormData(form);
   xhr.open("POST", "../ScriptPHP/register.php", true);

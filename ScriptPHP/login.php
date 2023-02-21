@@ -2,26 +2,27 @@
 
     include("mysql_connect.php");
 
-    $email = $_POST["user_email"];
-    $senha = $_POST["user_password"];
 
-    $stmt = $conn->prepare('SELECT `email` , `password` FROM clients WHERE email = ?');
-    $stmt -> bind_param("s", $email);
+
+    $email = $_POST["user_email"];
+    $password = $_POST["user_password"];
+
+    $stmt = $conn->prepare('SELECT `email` , `password` FROM clients WHERE email = ? AND `password` = ?');
+    $stmt -> bind_param("ss", $email, $password);
     $stmt -> execute();
     $result = $stmt->get_result();
 
     if($result->num_rows == 1){
 
-        $row = $result->fetch_assoc(); 
+        echo $email;
 
-        if($senha == $row["password"]){
-            echo "success";
-        }else {
-            echo "incorrect_password";
-        }
     } else {
-        echo "invalid_email";
+        echo "invalid_email_or_password";
     }
 
+    
+
+
+ 
 
 ?>
