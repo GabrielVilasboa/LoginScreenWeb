@@ -1,19 +1,23 @@
 # User Authentication Web :computer:
 
-Neste projeto tenho como objetivo criar as telas de autentificação de usuarios funcionais.
+Neste projeto tenho como objetivo criar telas para um site, com tema ainda indefinido. 
+O primeiro objetivo foi criar as funções de autentificação de usuarios Login e Registrar.
+Depois usei O Ajax para enviar esses dados para a Main onde ira ser a pagina principal.
 
-:man_technologist: Técnologias usadas: 
+### Os proximos objetivos definidos são: 
+* A Personalização das telas utilizando o bootstrap, css e html.
+* Deixar a pagina dinamica utilizando o JavaScript.
+* Implementar métodos de segurança
+
+### Métodos de segurança a serem implementados:
+* Reajustar todas as consutas SQL para previnir a injeção SQL
+* Criptografar as Senhas
+
+
+### :man_technologist: Técnologias usadas: 
 * JavaScript
 * PHP
 * Html
 * Css
 * Bootstrap
 * mySql
-### Aqui está uma lista dos objetivos provisorios para completar este projeto antes do carnaval.
-
-1. [x] Criar o HTML das telas de login, registro e main sem estilos. :page_facing_up:  
-2. [x] Criar os códigos PHP para conferir dados e adicioná-los ao banco de dados. :gear:  
-3. [x] Criar o código JavaScript para autenticar o CPF e email e fazer a troca de telas. :key:  
-4. [ ] Utilizar o Bootstrap e CSS para estilizar a página. :art:
-
-Concluir o projeto até o fim do Carnaval. :checkered_flag:  
