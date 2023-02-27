@@ -1,3 +1,9 @@
-body{
-    height: 100%;
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.mi-image {
+    background-image: url("../Images/gestao_de_pessoas1.jpg");
+    height: 100vh;
+    background-size: cover; 
 }

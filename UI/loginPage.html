@@ -4,38 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../Icons/letra-v.png">
-    <link rel="stylesheet" href="../Styles/style.css">
+    <link rel="icon" href="../Images/letra-v.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Styles/style.css">
     <title>Tela de Login</title>
-
-    </style>
 </head>
-<body class="bg-secondary">
+<body>
 
     
-<div class="container mt-5 pt-5 pb-5 border rounded">
-
-    <blockquote class="blockquote text-center w-50 mx-auto  align-middle">
-
-        <form action="../ScriptPHP/login.php" method="post" id="login_form">
-
-            <!-- Titulo da página  -->
-            <h1 class="display-4 text-light mb-4"> Login </h1>
-            <!-- campo email -->
-            <div class="input-group input-group-sm shadow m-2 ">
-                <input type="text" class="form-control" placeholder="Email" id="user_email" name="user_email">
+<div class="container-fluid">
+    <div class="row">
+        <div class= "mi-image col-md-7 bord" >
+            <div class="display-4 text-white ml-2 mr-4 mt-1 font-weight-bold">
+                Um Banco de desenvolvedores, para desenvolvedores!
             </div>
-            <!-- campo senha -->
-            <div class="input-group input-group-sm m-2 shadow ">
-                <input type="password" class="form-control" placeholder="Senha" id="user_password" name="user_password">
-            </div>
-            <!-- botão enviar -->
-            <input  type="submit" class="btn btn-secondary shadow mt-4 mb-3" id="register" value="Confirmar">
-            <br>
-        </form>
-            <a class="text-dark" href="registerPage.html">Não tem cadastro?</a>
-    </blockquote> 
+        </div>
+
+        <div class="text-center col-md-5 bg-primary p-5">
+            <form action="../ScriptPHP/login.php" method="post" id="login_form">
+
+                <!-- Titulo da página  -->
+                <h1 class="display-4 text-light m-5"> Login </h1>
+                <!-- campo email -->
+                <div class="input-group input-group-sm shadow m-3 mt-5">
+                    <input type="text" class="form-control" placeholder="Email" id="user_email" name="user_email">
+                </div>
+                <!-- campo senha -->
+                <div class="input-group input-group-sm m-3 shadow ">
+                    <input type="password" class="form-control" placeholder="Senha" id="user_password" name="user_password">
+                </div>
+                <!-- botão enviar -->
+                <input  type="submit" class="btn btn-secondary shadow m-3 w-100" id="register" value="Confirmar">
+                <br>
+            </form>
+                <a class="text-dark m-2" href="registerPage.html">Não tem cadastro?</a>
+        </div>
+    </div>
+    
 
 </div>
 
