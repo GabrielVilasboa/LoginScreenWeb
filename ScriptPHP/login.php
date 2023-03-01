@@ -2,8 +2,6 @@
 
     include("mysql_connect.php");
 
-
-
     $email = $_POST["user_email"];
     $password = $_POST["user_password"];
 
