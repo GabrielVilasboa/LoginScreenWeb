@@ -1,23 +1,31 @@
-# User Authentication Web :computer:
+# 🔒 Projeto de Autenticação de Usuários 🔒
 
-Neste projeto tenho como objetivo criar telas para um site, com tema ainda indefinido. 
-O primeiro objetivo foi criar as funções de autentificação de usuarios Login e Registrar.
-Depois usei O Ajax para enviar esses dados para a Main onde ira ser a pagina principal.
+## Descrição
 
-### Os proximos objetivos definidos são: 
-* A Personalização das telas utilizando o bootstrap, css e html.
-* Deixar a pagina dinamica utilizando o JavaScript.
-* Implementar métodos de segurança
+Este projeto é uma aplicação web que permite que os usuários façam login em um sistema utilizando um nome de usuário e senha. Ele foi desenvolvido utilizando as tecnologias 💻 JS, 🐘 PHP, 🎨 Bootstrap e 🗄️ MySql. Embora o projeto seja funcional e possa ser utilizado em um ambiente de produção, é importante ressaltar que ele ainda não está completamente seguro e faltam alguns métodos de segurança que serão adicionados no futuro.
 
-### Métodos de segurança a serem implementados:
-* Reajustar todas as consutas SQL para previnir a injeção SQL
-* Criptografar as Senhas
+O projeto foi desenvolvido como um projeto de estudo, com o objetivo de aprimorar habilidades em desenvolvimento de backend. Por essa razão, o foco principal foi na criação da lógica de autenticação e segurança do sistema.
 
+## Funcionalidades
 
-### :man_technologist: Técnologias usadas: 
-* JavaScript
-* PHP
-* Html
-* Css
-* Bootstrap
-* mySql
+- 🔒 Autenticação de usuários utilizando nome de usuário e senha
+- 📝 Página de registro para novos usuários
+- 🔒 Armazenamento de informações de usuários no banco de dados MySql
+- 🔒 Proteção contra ataques de SQL Injection
+
+## Melhorias Futuras
+
+Embora este projeto seja funcional, há ainda algumas melhorias que poderiam ser feitas para torná-lo mais seguro e intuitivo. Algumas ideias para futuras melhorias incluem:
+
+- 🎨 Melhorias na interface do usuário utilizando novas bibliotecas e frameworks como Angular
+- 🔒 Adição de métodos de segurança adicionais, como autenticação de dois fatores
+- 🎁 Adição de recursos adicionais, como um painel de administração para gerenciar usuários e permissões
+- 🔑 Implementação de recuperação de senha para usuários
+
+## Contribuição
+
+Contribuições são bem-vindas e incentivadas. Se você tiver alguma ideia para melhorar este projeto, sinta-se livre para criar uma issue ou enviar um pull request. 
+
+## Autor
+
+Desenvolvido por Gabriel Vilasboa como um projeto de estudo com foco no desenvolvimento de backend.
