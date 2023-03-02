@@ -11,53 +11,35 @@
 
     </style>
 </head>
-<body class="bg-secondary">
+<body class="text-center">
 
+  <form class="form-signin bg-white border rounded" action="../ScriptPHP/register.php" method="post" id="client_form">
+
+    <h1 class="h3 mb-3 font-weight-normal"> Cadastre-se </h1>
+
+    <!-- campo nome -->
+    <label for="user_name" class="sr-only">nome</label>
+    <input type="text" class="form-control" placeholder="name" id="user_name" name="user_name" required autofocus>
+
+    <!-- campo cpf -->
+    <label for="user_cpf" class="sr-only">cpf</label>
+    <input type="cpf" class="form-control" placeholder="cpf" id="user_cpf" name="user_cpf" required autofocus>
+    <!-- campo email -->
+    <label for="user_email" class="sr-only">email</label>
+    <input type="email" class="form-control" placeholder="Email" id="user_email" name="user_email" required autofocus>
+
+    <!-- campo senha -->
+    <label for="user_password" class="sr-only">senha</label>
+    <input type="password" class="form-control" placeholder="senha" id="user_password" name="user_password" required autofocus>
     
-<div class="container mt-5 pt-5 pb-5 border rounded">
-
-  <blockquote class="blockquote text-center w-50 mx-auto  align-middle">
-
-    <form action="../ScriptPHP/register.php" method="post" id="client_form">
-
-      <h1 class="display-4 text-light mb-4"> Cadastre-se </h1>
-
-      <!-- campo nome -->
-      <div class="input-group input-group-sm shadow m-2   ">
-          <input type="text" class="form-control" placeholder="Nome" id="user_name" name="user_name">
-      </div>
-
-      <!-- campo cpf -->
-      <div class="input-group input-group-sm shadow m-2   ">
-          <input type="text" class="form-control" placeholder="CPF" id="user_cpf" name="user_cpf">
-      </div>
-
-
-      <!-- campo email -->
-      <div class="input-group input-group-sm shadow m-2 ">
-          <input type="text" class="form-control" placeholder="Email" id="user_email" name="user_email">
-      </div>
-
-      <!-- campo senha -->
-      <div class="input-group input-group-sm m-2 shadow ">
-          <input type="password" class="form-control" placeholder="Senha" id="user_password" name="user_password">
-      </div>
-      
-      <!-- campo confirma a senha -->
-      <div class="input-group input-group-sm m-2 shadow ">
-      <input type="password" class="form-control" placeholder="Confirme a Senha" id="user_password_confirm" name="user_password_confirm">
-      </div>
-
-      <input  type="submit" class="btn btn-secondary shadow mt-4 mb-3" id="register" value="Confirmar"></button>
-      <br>
-
-    </form>
-
+    <button  type="submit" class="btn btn-lg btn-primary btn-block shadow" id="register">Login</button>
+    
     <a class="text-dark" href="loginPage.html">Já tem cadastro?</a>
 
-  </blockquote>
+  </form>
 
-</div>
+    
+
 
     <script src="..\JS\register.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

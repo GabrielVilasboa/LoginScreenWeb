@@ -42,19 +42,14 @@ function validateForm() {
   let cpf = document.getElementById("user_cpf");
   let email = document.getElementById("user_email");
   let password = document.getElementById("user_password");
-  let confirmPassword = document.getElementById("user_password_confirm");
 
   // Faz a validação dos campos
-  if (!name.value || !cpf.value || !email.value || !password.value || !confirmPassword.value) {
+  if (!name.value || !cpf.value || !email.value || !password.value) {
     alert("Por favor, preencha todos os campos.");
     return false;
   }
   if (!validateEmail(email.value)){
     alert("por favor digite um email válido");
-    return false;
-  }
-  if (password.value !== confirmPassword.value) {
-    alert("As senhas não coincidem.");
     return false;
   }
   if (!validateCPF(cpf.value)) {

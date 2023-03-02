@@ -17,10 +17,8 @@
     } else {
         echo "invalid_email_or_password";
     }
+    mysqli_close($conn);
 
-    
 
-
- 
 
 ?>

@@ -9,31 +9,25 @@
     <link rel="stylesheet" href="../Styles/style.css">
     <title>Tela de Login</title>
 </head>
+
 <body class="text-center">
 
-    
-<div class="container-fluid mi-image  ">
-    <div class="p-5 row align-items-center">
-        <div class="display-4 text-white ml-2 mr-4 mt-1 font-weight-bold col-md-7 offset-md-5 pb-5">
-               Um Banco de desenvolvedores, <br/> para desenvolvedores!
-        </div>
-
-        <div class="bg-white p-4 col-md-3 offset-md-9 mt-5 border border-dark rounded ">
-            <form class="form-signin" action="../ScriptPHP/login.php" method="post" id="login_form">
-                <!-- Titulo da página  -->
-                <h1 class="display-5 text-dark mb-3"> Login </h1>
+            <form class="form-signin bg-white border rounded" action="../ScriptPHP/login.php" method="post" id="login_form">
+                <h1 class="h3 mb-3 font-weight-normal"> Login </h1>
                 <!-- campo email -->
-                <label for="inputEmail" class="sr-only">Endereço de email</label>
-                <input type="text" class="form-control" placeholder="Email" id="user_email" name="user_email" required autofocus>
+                <label for="user_email" class="sr-only">Endereço de email</label>
+                <input type="email" class="form-control" placeholder="Email" id="user_email" name="user_email" required autofocus>
                 <!-- campo senha -->
-                <label for="inputEmail" class="sr-only">Senha</label>
+                <label for="user_password" class="sr-only">Senha</label>
                 <input type="password" class="form-control" placeholder="Senha" id="user_password" name="user_password" required autofocus>
 
                 <!-- botão enviar -->
-                <input  type="submit" class="btn btn-secondary shadow w-100 mt-2 mb-2" id="register" value="Confirmar">
+                <button  type="submit" class="btn btn-lg btn-primary btn-block shadow" id="register">Login</button>
                 <br>
-            </form>
                 <a class="text-muted m-2" href="registerPage.html">Não tem cadastro?</a>
+            </form>
+            
+                
         </div>
     </div>
     

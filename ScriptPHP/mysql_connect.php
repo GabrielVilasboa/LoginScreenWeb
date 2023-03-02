@@ -1,6 +1,6 @@
 <?php
     $hostname = "localhost";
-    $database = "codebank";
+    $database = "loginpage";
     $user = "root";
     $password = "";
 
