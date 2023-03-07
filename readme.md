@@ -4,7 +4,7 @@
 
 Este projeto é uma aplicação web que permite que os usuários façam login em um sistema utilizando um nome de usuário e senha. Ele foi desenvolvido utilizando as tecnologias 💻 JS, 🐘 PHP, 🎨 Bootstrap e 🗄️ MySql. Embora o projeto seja funcional e possa ser utilizado em um ambiente de produção, é importante ressaltar que ele ainda não está completamente seguro e faltam alguns métodos de segurança que serão adicionados no futuro.
 
-O projeto foi desenvolvido como um projeto de estudo, com o objetivo de aprimorar habilidades em desenvolvimento de backend. Por essa razão, o foco principal foi na criação da lógica de autenticação e segurança do sistema.
+O projeto foi desenvolvido como um projeto de estudo, com o objetivo de aprimorar habilidades de desenvolvimento. Por essa razão, o foco principal foi na criação da lógica de autenticação e segurança do sistema.
 
 ## Funcionalidades
 
