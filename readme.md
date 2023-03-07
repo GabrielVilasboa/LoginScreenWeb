@@ -28,4 +28,4 @@ Contribuições são bem-vindas e incentivadas. Se você tiver alguma ideia para
 
 ## Autor
 
-Desenvolvido por Gabriel Vilasboa como um projeto de estudo com foco no desenvolvimento de backend.
+Desenvolvido por Gabriel Vilasboa como um projeto de estudo.
